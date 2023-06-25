@@ -1,2 +1,2 @@
 # HTML_CSS
-Collection of HTML and CSS projects
+This is a collection of HTML and CSS projects
