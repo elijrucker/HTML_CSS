@@ -1,0 +1,19 @@
+header {
+  font-weight: bold;
+}
+
+code {
+ font-style: italic;
+}
+
+#navbar a{
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: hover;
+}
+
+@media #navbar {
+  max-width: 1250px;
+}
