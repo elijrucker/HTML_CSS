@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>Survey Form</title>
+    <title>Snack Sweepstakes</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+  </head>
 
-<body>
-    <h1 id="title">Favorite Comfort Food</h1>
-
-    <p id="description">Our favorite culinary indulgences speak volumes about our character.</p>
-
+  <body>
+    <h1 id="title">Favorite Snack Sweepstakes</h1>
+    
+    <p id="description">Enter to win a month's supply of your favorite snack!</p>
+  
     <form id="survey-form">
+    
+      <fieldset>  
+        <legend id="name-label">First and Last Name</legend>
+        <input id="name" type="text" placeholder="Name" required></input>
+        <br>
+        <label id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Email" required></input>
+        <br>
+        <label id="number-label">Number</label>
+        <input id="number" type="number" min="1" max="100" placeholder="Number"></input>
+        <br>
+      </fieldset>
 
-        <fieldset>
-            <p>
-                Enter for a chance to win a month's supply of your favorite snack!
-            </p>
-            <label id="nameLabel"> Name </label>
-            <input id="name" type="text" placeholder="Name" required></input><br>
-            <label id="emailLabel"> Email </label>
-            <input id="email" type="email" placeholder="Email" required></input><br>
-        </fieldset>
+      <fieldset>
+        <legend id="sweetSavory">Sweet or Savory?</legend>
+        <select id="dropdown">
+          <option>(select one)</option>
+          <option value="sweet">Sweet</option>
+          <option value="savory">Savory</option>
+        </select>
+      </fieldset>
 
-        <fieldset>
-            <label for="dropdown">How healthy do you consider yourself?</label>
-            <select id="dropdown">
-                <option>(select one)</option>
-                <option value="couchPotato">Couch Potato</option>
-                <option value="weWarrior">Weekend Warrior</option>
-                <option value="triAthlete">Triathelte</option>
-            </select>
-        </fieldset>
+      <fieldset>
+        <legend id="snackType">What's your flavor profile?</legend>
+        <label id="radio1">Light & Fun</label>
+        <input id="radioButton1" type="radio" name="radioOptions" value="popcorn">Popcorn</input>
+        <br>
+        <label id="radio2">Rich & Decadent</label>
+        <input id="radioButton2" type="radio" name="radioOptions" value="chocolate">Chocolate</input>
+        <br>
+      </fieldset>
 
-        <fieldset>
-            <p>
-                What is your favorite type of comfort food?
-            </p>
-            <label for="radio1Choco">Chocolates</label>
-            <input type="radio" id="radio1Choco" name="radio-options" value="1"><img src="images/chocolates.jpg"
-                alt="Chocolates"></input><br>
-            <label for="radio2Gummy">Gummies</label>
-            <input type="radio" id="radio2Gummy" name="radio-options" value="2"><img src="images/gummies.jpg"
-                alt="Gummies"></input><br>
-            <label for="radio3Savory">Savory</label>
-            <input type="radio" id="radio3Savory" name="radio-options" value="3"><img src="images/popcorn.jpg"
-                alt="Savory"></input><br>
-        </fieldset>
+      <fieldset>
+        <legend id="snackLevel">How do you snack?</legend>
+        <input type="checkbox" value="low">Passive Snacker</input>
+        <input type="checkbox" value="moderate">Binge Snacker</input>
+        <input type="checkbox" value="heavy">Snack - O - File</input>
+      </fieldset>
 
-        <fieldset>
-            <p>
-                When do you get your snack on?
-            </p>
-            <input type="checkbox" value="1">While Relaxing</input>
-            <input type="checkbox" value="2">Stress Eating</input>
-            <input type="checkbox" value="3">While Binging</input>
-        </fieldset>
+      <fieldset>
+        <legend id="aux">Comments</legend>
+        <textarea id="comments" placeholder="Any specific comments?"></textarea>
+      </fieldset>
 
-        <fieldset>
-            <p>
-                If you would, who do you prefer to snack with?
-            </p>
-            <textarea id="bio" name="bio" placeholder="Enter your favorite partner in snacking!"></textarea>
-        </fieldset>
-
-        <button id="submit">Submit</submit>
+      <button id="submit">Submit</submit>
     </form>
-
-</html>
+  
+  </html>
