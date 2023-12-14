@@ -17,13 +17,13 @@
     
       <fieldset>  
         <legend id="name-label">First and Last Name</legend>
-        <input id="name" type="text" placeholder="Name" required></input>
+        <input id="name" type="text" placeholder="Name" required>
         <br>
         <label id="email-label">Email</label>
-        <input id="email" type="email" placeholder="Email" required></input>
+        <input id="email" type="email" placeholder="Email" required>
         <br>
         <label id="number-label">Number</label>
-        <input id="number" type="number" min="1" max="100" placeholder="Number"></input>
+        <input id="number" type="number" min="1" max="100" placeholder="Number">
         <br>
       </fieldset>
 
@@ -39,18 +39,21 @@
       <fieldset>
         <legend id="snackType">What's your flavor profile?</legend>
         <label id="radio1">Light & Fun</label>
-        <input id="radioButton1" type="radio" name="radioOptions" value="popcorn">Popcorn</input>
+        <input id="radioButton1" type="radio" name="radioOptions" value="popcorn">
         <br>
         <label id="radio2">Rich & Decadent</label>
-        <input id="radioButton2" type="radio" name="radioOptions" value="chocolate">Chocolate</input>
+        <input id="radioButton2" type="radio" name="radioOptions" value="chocolate">
         <br>
       </fieldset>
 
       <fieldset>
         <legend id="snackLevel">How do you snack?</legend>
-        <input type="checkbox" value="low">Passive Snacker</input>
-        <input type="checkbox" value="moderate">Binge Snacker</input>
-        <input type="checkbox" value="heavy">Snack - O - File</input>
+        <label for="passive">Passive Snacker</label>
+        <input type="checkbox" id="passive" value="low">
+        <label for="binge">Binge Snacker</label>
+        <input type="checkbox" id="binge" value="moderate">
+        <label for="insane">Snack - O - File</label>
+        <input type="checkbox" id="insane" value="heavy">
       </fieldset>
 
       <fieldset>
