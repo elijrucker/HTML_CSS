@@ -8,60 +8,52 @@
     <link rel="stylesheet" href="styles.css">
   </head>
 
-  <body>
-    <h1 id="title">Favorite Snack Sweepstakes</h1>
+    <body>
+      <h1 id="title">Favorite Snack Sweepstakes</h1>
+      <p id="description">Enter to win a month's supply of your favorite snack!</p>
+      <form id="survey-form">
+        <fieldset>  
+            <legend id="name-label">First and Last Name</legend>
+            <input id="name" type="text" placeholder="Name" required>
+            <br>
+            <label id="email-label">Email</label>
+            <input id="email" type="email" placeholder="Email" required>
+            <br>
+            <label id="number-label">Number</label>
+            <input id="number" type="number" min="1" max="100" placeholder="Number">
+            <br>
+        </fieldset>
+        <fieldset>
+          <legend id="sweetSavory">Sweet or Savory?</legend>
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option value="sweet">Sweet</option>
+            <option value="savory">Savory</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend id="snackType">What's your flavor profile?</legend>
+          <label for="radio1">Light & Fun</label>
+          <input id="radio1" type="radio" name="radioOptions" value="popcorn">
+          <br>
+          <label for="radio2">Rich & Decadent</label>
+          <input id="radio2" type="radio" name="radioOptions" value="chocolate">
+          <br>
+        </fieldset>
+        <fieldset>
+          <legend id="snackLevel">How do you snack?</legend>
+          <label for="passive">Passive Snacker</label>
+          <input type="checkbox" id="passive" value="low">
+          <label for="binge">Binge Snacker</label>
+          <input type="checkbox" id="binge" value="moderate">
+          <label for="insane">Snack - O - File</label>
+          <input type="checkbox" id="insane" value="heavy">
+        </fieldset>
+        <fieldset>
+          <legend id="aux">Comments</legend>
+          <textarea id="comments" placeholder="Any specific comments?"></textarea>
+        </fieldset>
+        <button id="submit">Submit</submit>
+      </form>
     
-    <p id="description">Enter to win a month's supply of your favorite snack!</p>
-  
-    <form id="survey-form">
-    
-      <fieldset>  
-        <legend id="name-label">First and Last Name</legend>
-        <input id="name" type="text" placeholder="Name" required>
-        <br>
-        <label id="email-label">Email</label>
-        <input id="email" type="email" placeholder="Email" required>
-        <br>
-        <label id="number-label">Number</label>
-        <input id="number" type="number" min="1" max="100" placeholder="Number">
-        <br>
-      </fieldset>
-
-      <fieldset>
-        <legend id="sweetSavory">Sweet or Savory?</legend>
-        <select id="dropdown">
-          <option>(select one)</option>
-          <option value="sweet">Sweet</option>
-          <option value="savory">Savory</option>
-        </select>
-      </fieldset>
-
-      <fieldset>
-        <legend id="snackType">What's your flavor profile?</legend>
-        <label for="radio1">Light & Fun</label>
-        <input id="radio1" type="radio" name="radioOptions" value="popcorn">
-        <br>
-        <label for="radio2">Rich & Decadent</label>
-        <input id="radio2" type="radio" name="radioOptions" value="chocolate">
-        <br>
-      </fieldset>
-
-      <fieldset>
-        <legend id="snackLevel">How do you snack?</legend>
-        <label for="passive">Passive Snacker</label>
-        <input type="checkbox" id="passive" value="low">
-        <label for="binge">Binge Snacker</label>
-        <input type="checkbox" id="binge" value="moderate">
-        <label for="insane">Snack - O - File</label>
-        <input type="checkbox" id="insane" value="heavy">
-      </fieldset>
-
-      <fieldset>
-        <legend id="aux">Comments</legend>
-        <textarea id="comments" placeholder="Any specific comments?"></textarea>
-      </fieldset>
-
-      <button id="submit">Submit</submit>
-    </form>
-  
   </html>
