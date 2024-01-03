@@ -10,4 +10,4 @@ This is my first public repo and is very much an exercise in 'learning by doing'
 ## Future Contents
   - JavaScript Algorithms and Data Structures Certification
 
-**[Check out my profile](https://www.freecodecamp.org/elijrucker)**
+**[Check out my freeCodeCampe profile!](https://www.freecodecamp.org/elijrucker)**

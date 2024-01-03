@@ -1,0 +1,14 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  /*FOLLOWING CODE REQUIRED FOR EXAM - fufills 'media query' requirement*/
+  
+  @media only screen and (max-width: 600px) {
+    .hero-title {
+      font-size: 4.5rem;
+    }
+  }
