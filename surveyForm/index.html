@@ -11,6 +11,7 @@
     <body>
       <h1 id="title">Favorite Snack Sweepstakes</h1>
       <p id="description">Enter to win a month's supply of your favorite snack!</p>
+
       <form id="survey-form">
         <fieldset>  
             <legend id="name-label">First and Last Name</legend>
@@ -23,6 +24,7 @@
             <input id="number" type="number" min="1" max="100" placeholder="Number">
             <br>
         </fieldset>
+        
         <fieldset>
           <legend id="sweetSavory">Sweet or Savory?</legend>
           <select id="dropdown">
@@ -31,6 +33,7 @@
             <option value="savory">Savory</option>
           </select>
         </fieldset>
+        
         <fieldset>
           <legend id="snackType">What's your flavor profile?</legend>
           <label for="radio1">Light & Fun</label>
@@ -40,6 +43,7 @@
           <input id="radio2" type="radio" name="radioOptions" value="chocolate">
           <br>
         </fieldset>
+        
         <fieldset>
           <legend id="snackLevel">How do you snack?</legend>
           <label for="passive">Passive Snacker</label>
@@ -49,10 +53,12 @@
           <label for="insane">Snack - O - File</label>
           <input type="checkbox" id="insane" value="heavy">
         </fieldset>
+        
         <fieldset>
           <legend id="aux">Comments</legend>
           <textarea id="comments" placeholder="Any specific comments?"></textarea>
         </fieldset>
+        
         <button id="submit">Submit</submit>
       </form>
   </html>
